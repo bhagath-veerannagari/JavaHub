@@ -7,6 +7,20 @@ public class ClassesAndObjects {
         System.out.println(rose); // toString in pojo enables printing of object attributes
         System.out.println(star);
 
+        // Understanding difference between "==" and ".equals()" for comparing an object
+
+        Cat rose1 = new Cat("Rose", 6, "Black");
+        Cat rose2 = new Cat("Rose", 6, "Black");
+
+        System.out.println(rose1 == rose2);  // returns false as it compares the reference values of both the objects
+        System.out.println(rose1.equals(rose2)); // returns false if it refers equals method from object class, else returns true if we have an override for equals method in Cat class
+
+
+        Cat[] cats = {rose1, rose2};
+        Person alex = new Person("Alex", "Cortana", Gender.MALE, cats);
+        System.out.println(alex);
+
+
 
         //        Cat rose = new Cat();
         //        rose.setName("Rose");
