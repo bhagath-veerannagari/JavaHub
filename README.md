@@ -13,6 +13,7 @@
 ######                                          a. Contain a default constructor
 ######                                          b. all member variables are private
 ######                                          c. must implement serializable
+##### 5. Protected is same as private in all aspects except that a protected field can be accessed by its class as well as its sub-classes  
 
 
 
