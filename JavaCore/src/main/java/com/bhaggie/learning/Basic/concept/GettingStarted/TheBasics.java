@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.learning.Basic.concept;
+package main.java.com.bhaggie.learning.Basic.concept.GettingStarted;
 
 public class TheBasics {
     public static void main(String[] args) {
