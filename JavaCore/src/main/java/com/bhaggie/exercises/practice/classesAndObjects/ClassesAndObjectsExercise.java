@@ -9,7 +9,5 @@ public class ClassesAndObjectsExercise {
         Person person1 = new Person("Bhagath", "Veerannagari", Gender.MALE, address, car, empDetails);
 
         System.out.println(person1);
-        System.out.println(person1);
-        System.out.println(person1);
     }
 }
