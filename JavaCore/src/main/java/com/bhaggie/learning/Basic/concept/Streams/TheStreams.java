@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class TheStreams {
-
     @Test
     void streams() {
         List<String> names = List.of("Bhaggie", "Roshan", "Shashi", "Jaya");
