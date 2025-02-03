@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.learning.Basic.concept.DataStructures;
+package main.java.com.bhaggie.coreBasics.DataStructures;
 
 import java.util.LinkedList;
 import java.util.Queue;
