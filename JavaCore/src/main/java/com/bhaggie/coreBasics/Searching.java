@@ -1,5 +1,7 @@
 package main.java.com.bhaggie.coreBasics;
 
+import main.java.com.bhaggie.coreBasics.utils.CoreUtils;
+
 import java.util.Scanner;
 
 public class Searching {

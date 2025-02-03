@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.learning.Basic.concept.ClassesAndObjects;
+package main.java.com.bhaggie.coreBasics.utils.ClassesAndObjects;
 
 import java.util.Arrays;
 import java.util.Objects;

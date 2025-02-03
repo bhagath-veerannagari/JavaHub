@@ -1,6 +1,6 @@
 package main.java.com.bhaggie.learning.Basic.concept.Streams;
 
-import main.java.com.bhaggie.learning.Basic.concept.ClassesAndObjects.Gender;
+import main.java.com.bhaggie.coreBasics.utils.ClassesAndObjects.Gender;
 
 import java.util.Objects;
 
