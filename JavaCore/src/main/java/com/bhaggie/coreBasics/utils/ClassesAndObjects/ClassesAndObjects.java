@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.learning.Basic.concept.ClassesAndObjects;
+package main.java.com.bhaggie.coreBasics.utils.ClassesAndObjects;
 
 public class ClassesAndObjects {
     public static void main(String[] args) {
