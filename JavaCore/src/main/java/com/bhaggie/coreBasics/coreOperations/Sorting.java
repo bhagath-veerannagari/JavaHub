@@ -1,4 +1,6 @@
-package main.java.com.bhaggie.coreBasics;
+package main.java.com.bhaggie.coreBasics.coreOperations;
+
+import main.java.com.bhaggie.coreBasics.utils.CoreUtils;
 
 import main.java.com.bhaggie.coreBasics.utils.CoreUtils;
 

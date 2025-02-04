@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.coreBasics;
+package main.java.com.bhaggie.coreBasics.coreOperations;
 
 import java.util.Scanner;
 
