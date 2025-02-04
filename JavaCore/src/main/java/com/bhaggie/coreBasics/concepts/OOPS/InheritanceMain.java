@@ -1,4 +1,9 @@
-package main.java.com.bhaggie.learning.Basic.concept.OOPS.inheritance;
+package main.java.com.bhaggie.coreBasics.concepts.OOPS;
+
+import main.java.com.bhaggie.coreBasics.utils.model.Employee;
+import main.java.com.bhaggie.coreBasics.utils.model.Address;
+import main.java.com.bhaggie.coreBasics.utils.model.Manager;
+import main.java.com.bhaggie.coreBasics.utils.model.Programmer;
 
 public class InheritanceMain {
     public static void main(String[] args) {

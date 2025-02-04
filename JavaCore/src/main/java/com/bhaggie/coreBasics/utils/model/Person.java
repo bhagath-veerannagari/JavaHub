@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.exercises.practice.classesAndObjects;
+package main.java.com.bhaggie.coreBasics.utils.model;
 
 import java.util.Objects;
 
@@ -6,15 +6,29 @@ public class Person {
     private String firstName;
     private String lastName;
     private Gender gender;
-    private Address address;
+    private Cat[] cats;
+    private Address address1;
     private Car carDetails;
     private EmploymentDetails empDetails;
+
+    public Person(String firstName, String lastName, Gender gender) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+    }
+
+    public Person(String firstName, String lastName, Gender gender, Cat[] cats) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.cats = cats;
+    }
 
     public Person(String firstName, String lastName, Gender gender, Address address, Car carDetails, EmploymentDetails empDetails) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
-        this.address = address;
+        this.address1 = address;
         this.carDetails = carDetails;
         this.empDetails = empDetails;
     }
@@ -23,7 +37,7 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
-        this.address = address;
+        this.address1 = address;
         this.empDetails = empDetails;
     }
 
@@ -51,12 +65,20 @@ public class Person {
         this.gender = gender;
     }
 
+    public Cat[] getCats() {
+        return cats;
+    }
+
+    public void setCats(Cat[] cats) {
+        this.cats = cats;
+    }
+
     public Address getAddress() {
-        return address;
+        return address1;
     }
 
     public void setAddress(Address address) {
-        this.address = address;
+        this.address1 = address;
     }
 
     public Car getCarDetails() {
@@ -81,7 +103,7 @@ public class Person {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", gender=" + gender +
-                ", address=" + address +
+                ", address=" + address1 +
                 ", carDetails=" + carDetails +
                 ", empDetails=" + empDetails +
                 '}';
@@ -92,11 +114,11 @@ public class Person {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
-        return Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && gender == person.gender && Objects.equals(address, person.address) && Objects.equals(carDetails, person.carDetails) && Objects.equals(empDetails, person.empDetails);
+        return Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && gender == person.gender && Objects.equals(address1, person.address1) && Objects.equals(carDetails, person.carDetails) && Objects.equals(empDetails, person.empDetails);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstName, lastName, gender, address, carDetails, empDetails);
+        return Objects.hash(firstName, lastName, gender, address1, carDetails, empDetails);
     }
 }

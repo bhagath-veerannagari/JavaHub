@@ -1,4 +1,6 @@
-package main.java.com.bhaggie.learning.Basic.concept.OOPS.encapsulation;
+package main.java.com.bhaggie.coreBasics.concepts.OOPS;
+
+import main.java.com.bhaggie.coreBasics.utils.model.BankAccount;
 
 import java.math.BigDecimal;
 

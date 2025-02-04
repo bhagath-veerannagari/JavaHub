@@ -1,8 +1,8 @@
-package main.java.com.bhaggie.learning.Basic.concept.OOPS.inheritance;
+package main.java.com.bhaggie.coreBasics.utils.model;
 
 import java.util.Objects;
 
-public class Manager extends Employee{
+public class Manager extends Employee {
     private int teamSize;
 
     public Manager(String name, Address address, int age, int experience, int teamSize) {
