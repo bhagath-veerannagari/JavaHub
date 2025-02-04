@@ -1,8 +1,8 @@
-package main.java.com.bhaggie.learning.Basic.concept.OOPS.inheritance;
+package main.java.com.bhaggie.coreBasics.utils.model;
 
 import java.util.Arrays;
 
-public class Programmer extends Employee{
+public class Programmer extends Employee {
     private String[] programmingLanguages;
 
     public Programmer(String name, Address address, int age, int experience, String[] programmingLanguages) {

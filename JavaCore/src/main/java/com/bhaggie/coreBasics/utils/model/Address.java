@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.learning.Basic.concept.OOPS.inheritance;
+package main.java.com.bhaggie.coreBasics.utils.model;
 
 import java.util.Objects;
 

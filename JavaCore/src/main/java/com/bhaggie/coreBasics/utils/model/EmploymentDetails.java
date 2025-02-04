@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.exercises.practice.classesAndObjects;
+package main.java.com.bhaggie.coreBasics.utils.model;
 
 import java.util.Objects;
 

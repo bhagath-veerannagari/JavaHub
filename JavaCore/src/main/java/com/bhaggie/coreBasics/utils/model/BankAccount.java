@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.learning.Basic.concept.OOPS.encapsulation;
+package main.java.com.bhaggie.coreBasics.utils.model;
 
 import java.math.BigDecimal;
 import java.util.Objects;

@@ -1,6 +1,5 @@
-package main.java.com.bhaggie.exercises.Streams;
+package main.java.com.bhaggie.coreBasics.concepts.Streams;
 
-import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
