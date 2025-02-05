@@ -1,6 +1,8 @@
 package main.java.com.bhaggie.coreBasics.coreUtils;
 
 import main.java.com.bhaggie.coreBasics.coreConcepts.DataStructures;
+import main.java.com.bhaggie.coreBasics.coreConcepts.OOPS;
+import main.java.com.bhaggie.coreBasics.coreConcepts.Streams;
 import main.java.com.bhaggie.coreBasics.coreConcepts.TheBasics;
 import main.java.com.bhaggie.coreBasics.coreOperations.Palindrome;
 import main.java.com.bhaggie.coreBasics.coreOperations.Searching;
@@ -68,16 +70,32 @@ public class SelectConceptOrOperation {
                 }
                 break;
 
-            case 3:
+            case 3: // OOPS
                 switch(selectSubConcept) {
                     case 1:
+                        OOPS.learnClassesAndObjects();
+                        break;
+                    case 2:
+                        OOPS.understandingClassesAndObjects();
+                        break;
+                    case 3:
+                        OOPS.learnInheritance();
+                        break;
+                    case 4:
+                        OOPS.learnEncapsulation();
+                        break;
+                }
+                break;
+
+            case 4: // Streams
+                switch(selectSubConcept) {
+                    case 1:
+                        Streams.getCharCount();
                         break;
                     case 2:
                         break;
-                    case 3:
-                        break;
                 }
-
+                break;
         }
 
     }
