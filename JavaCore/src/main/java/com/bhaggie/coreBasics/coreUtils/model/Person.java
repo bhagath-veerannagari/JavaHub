@@ -3,6 +3,8 @@ package main.java.com.bhaggie.coreBasics.coreUtils.model;
 import java.util.Objects;
 
 public class Person {
+
+    private int age;
     private String firstName;
     private String lastName;
     private Gender gender;
@@ -14,6 +16,12 @@ public class Person {
     public Person(String firstName, String lastName, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.gender = gender;
+    }
+
+    public Person(int age, String firstName, Gender gender) {
+        this.age = age;
+        this.firstName = firstName;
         this.gender = gender;
     }
 
@@ -39,6 +47,14 @@ public class Person {
         this.gender = gender;
         this.address1 = address;
         this.empDetails = empDetails;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getFirstName() {

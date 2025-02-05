@@ -1,6 +1,8 @@
-package main.java.com.bhaggie.coreBasics.coreConcepts.Streams;
+package test.java.com.bhaggie.coreBasics.coreOperationTests;
 
 import main.java.com.bhaggie.coreBasics.coreUtils.model.Gender;
+import main.java.com.bhaggie.coreBasics.coreUtils.model.Person;
+
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -8,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class GettingStarted {
+public class GettingStartedWithTesting {
 
     List<Person> people = List.of(
             new Person(29, "Bhaggie", Gender.MALE),

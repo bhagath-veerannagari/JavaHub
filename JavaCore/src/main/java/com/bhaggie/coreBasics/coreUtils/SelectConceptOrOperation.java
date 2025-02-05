@@ -1,5 +1,7 @@
 package main.java.com.bhaggie.coreBasics.coreUtils;
 
+import main.java.com.bhaggie.coreBasics.coreConcepts.DataStructures;
+import main.java.com.bhaggie.coreBasics.coreConcepts.TheBasics;
 import main.java.com.bhaggie.coreBasics.coreOperations.Palindrome;
 import main.java.com.bhaggie.coreBasics.coreOperations.Searching;
 import main.java.com.bhaggie.coreBasics.coreOperations.Sorting;
@@ -32,15 +34,50 @@ public class SelectConceptOrOperation {
         int selectSubConcept = sc.nextInt();
 
         switch(selectConcept) {
-            case 1:
+            case 1: // The Basics
                 switch(selectSubConcept) {
                     case 1:
-
+                        TheBasics.printfunction();
                         break;
                     case 2:
-
+                        TheBasics.learnComments();
+                        break;
+                    case 3:
+                        TheBasics.learnVariables();
+                        break;
+                    case 4:
+                        TheBasics.learnOperators();
                         break;
                 }
+                break;
+
+            case 2: // DataStructures
+                switch(selectSubConcept) {
+                    case 1:
+                        DataStructures.learnArrays();
+                        break;
+                    case 2:
+                        DataStructures.learnLists();
+                        break;
+                    case 3:
+                        DataStructures.learnQueue();
+                        break;
+                    case 4:
+                        DataStructures.learnStack();
+                        break;
+                }
+                break;
+
+            case 3:
+                switch(selectSubConcept) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                }
+
         }
 
     }

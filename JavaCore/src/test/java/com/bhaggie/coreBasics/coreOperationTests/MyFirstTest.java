@@ -1,4 +1,4 @@
-package test;
+package test.java.com.bhaggie.coreBasics.coreOperationTests;
 
 import org.junit.jupiter.api.Test;
 
