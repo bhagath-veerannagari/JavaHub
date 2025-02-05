@@ -1,14 +1,12 @@
 package main.java.com.bhaggie.coreBasics.coreOperations;
 
-import main.java.com.bhaggie.coreBasics.utils.CoreUtils;
-
-import main.java.com.bhaggie.coreBasics.utils.CoreUtils;
+import main.java.com.bhaggie.coreBasics.coreUtils.CoreUtilsFactory;
 
 import java.util.Arrays;
 
 public class Sorting {
     public static int[] selectionSortAscending() {
-        int inputArray[] = CoreUtils.inputElementsIntoArray();
+        int inputArray[] = CoreUtilsFactory.inputElementsIntoArray();
         for(int i = 0; i<inputArray.length; i++) {
             for(int j = i+1; j<inputArray.length; j++) {
                 if(inputArray[i] > inputArray[j]) {
@@ -23,7 +21,7 @@ public class Sorting {
     }
 
     public static int[] selectionSortDescending() {
-        int[] inputArray = CoreUtils.inputElementsIntoArray();
+        int[] inputArray = CoreUtilsFactory.inputElementsIntoArray();
         for(int i = 0; i<inputArray.length; i++) {
             for(int j = i+1; j<inputArray.length; j++) {
                 if(inputArray[i] < inputArray[j]) {

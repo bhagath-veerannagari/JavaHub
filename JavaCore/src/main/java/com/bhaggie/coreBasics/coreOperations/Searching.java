@@ -1,8 +1,6 @@
 package main.java.com.bhaggie.coreBasics.coreOperations;
 
-import main.java.com.bhaggie.coreBasics.utils.CoreUtils;
-
-import main.java.com.bhaggie.coreBasics.utils.CoreUtils;
+import main.java.com.bhaggie.coreBasics.coreUtils.CoreUtilsFactory;
 
 import java.util.Scanner;
 
@@ -11,7 +9,7 @@ public class Searching {
     Scanner sc = new Scanner(System.in);
 
     public static void linearSearch() {
-        int inputArray[] = CoreUtils.inputElementsIntoArray();
+        int inputArray[] = CoreUtilsFactory.inputElementsIntoArray();
         System.out.println("Enter the element to search: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

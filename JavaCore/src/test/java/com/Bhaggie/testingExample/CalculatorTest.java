@@ -1,6 +1,6 @@
 package test.java.com.Bhaggie.testingExample;
 
-import main.java.com.bhaggie.coreBasics.concepts.testingExample.Calculator;
+import main.java.com.bhaggie.coreBasics.coreConcepts.testingExample.Calculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
