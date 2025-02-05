@@ -4,11 +4,9 @@ import main.java.com.bhaggie.coreBasics.coreConcepts.DataStructures;
 import main.java.com.bhaggie.coreBasics.coreConcepts.OOPS;
 import main.java.com.bhaggie.coreBasics.coreConcepts.Streams;
 import main.java.com.bhaggie.coreBasics.coreConcepts.TheBasics;
-import main.java.com.bhaggie.coreBasics.coreOperations.Palindrome;
-import main.java.com.bhaggie.coreBasics.coreOperations.Searching;
-import main.java.com.bhaggie.coreBasics.coreOperations.Sorting;
-import main.java.com.bhaggie.coreBasics.coreOperations.SwapTwoNumbers;
+import main.java.com.bhaggie.coreBasics.coreOperations.*;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SelectConceptOrOperation {
@@ -148,6 +146,16 @@ public class SelectConceptOrOperation {
                         break;
                 }
                 break;
+
+            case 5: // ArrayOperations
+                switch (selectInnerOperation) {
+                    case 1:
+                        int[] inputArray = CoreUtilsFactory.inputElementsIntoArray();
+                        System.out.println("Enter the target value: ");
+                        int target = sc.nextInt();
+                        System.out.println(Arrays.toString(ArrayOperations.returnIndicesOftwoNumbersAddingUpToTarget(inputArray, target)));
+                }
         }
     }
 }
+
