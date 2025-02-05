@@ -1,13 +1,18 @@
-package main.java.com.bhaggie.coreBasics.coreConcepts.zeroBasics;
+package main.java.com.bhaggie.coreBasics.coreConcepts;
 
 public class TheBasics {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("Welcome to Bhaggie's world of Java Programming !!");
-        System.out.println("Let's Rock !!");
 
-        System.out.println("---------------------------------------------------------------------------------------------------");
+    public static void printfunction() {
+        // Print in same line
+        System.out.print("Hello world!");
+        System.out.print("Welcome to Bhaggie's world of Java Programming !!");
 
+        // Print in different lines
+        System.out.println("Start Learning");
+        System.out.println("and Let's Rock !!");
+    }
+
+    public static void learnComments() {
         // Single line Comment
 
         /*
@@ -17,9 +22,9 @@ public class TheBasics {
         */
 
         System.out.println("This is about comments !!");
+    }
 
-        System.out.println("---------------------------------------------------------------------------------------------------");
-
+    public static void learnVariables() {
         // 1. Variables
         // Primitives - allows to store simple values
         int num1 = 20;
@@ -44,12 +49,12 @@ public class TheBasics {
         double num4 = 1_008.45;
         System.out.println(num3);
         System.out.println(num4);
+    }
 
-        System.out.println("---------------------------------------------------------------------------------------------------");
-
-        // 3. Arithmetic Operators
-        num1 = 10;
-        num2 = 3;
+    public static void learnOperators() {
+        // 1. Arithmetic Operators
+        int num1 = 10;
+        int num2 = 3;
 
         System.out.println(num1 + num2);
         System.out.println(num1 - num2);
@@ -59,15 +64,12 @@ public class TheBasics {
 
         System.out.println("---------------------------------------------------------------------------------------------------");
 
-        // 4. Increment and Decrement operators
+        // 2. Increment and Decrement operators
         num1 = 1;
-
-        /*
         int inc = num1 + 1;
         int dec = num1 - 1;
         System.out.println(inc);
         System.out.println(dec);
-         */
 
         System.out.println(num1++);  // prints 1, saves as 2
         System.out.println(++num1);  // prints 3, saves as 3
@@ -78,21 +80,19 @@ public class TheBasics {
 
         System.out.println("---------------------------------------------------------------------------------------------------");
 
-        // 4. Comparison operators - " < <= > >= != "
+        // 3. Comparison operators - " < <= > >= != "
         System.out.println(10 > 10);
         System.out.println(10 >= 10);
         System.out.println(10 < 10);
         System.out.println(10 <= 10);
         System.out.println(10 != 10);
 
-        isAdult = 15 >= 16;
-        System.out.println(isAdult);
+        boolean isGreater = 15 >= 16;
+        System.out.println(isGreater);
 
         System.out.println("---------------------------------------------------------------------------------------------------");
 
         // 5. ShortHand re-assignment
-
-
 
     }
 }

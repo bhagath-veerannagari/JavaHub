@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.coreBasics.coreConcepts.testingExample;
+package main.java.com.bhaggie.coreBasics.coreOperations;
 
 public class Calculator {
     public int add(int ...numbers) {
