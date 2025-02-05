@@ -43,6 +43,8 @@ public class Cat {
     public void setColor(String color) {
         this.color = color;
     }
+
+
     public void meow() {
         System.out.println(name + ": meow...");
     }

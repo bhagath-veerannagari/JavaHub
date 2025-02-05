@@ -59,54 +59,44 @@ public class OOPS {
         Person alex = new Person("Alex", "Cortana", Gender.MALE, cats);
         System.out.println(alex);
 
-        //        Cat rose = new Cat();
-        //        rose.setName("Rose");
-        //        rose.meow();
-        //        System.out.println(rose.getName());
-        //
-        //        Cat star = new Cat();
-        //        star.setName("Star");
-        //        star.meow();
-        //        System.out.println(star.getName());
+
+        Cat cat3 = new Cat();
+        cat3.setName("Rose");
+        cat3.meow();
+        System.out.println(cat3.getName());
+
+        Cat cat4 = new Cat();
+        cat4.setName("Star");
+        cat4.meow();
+        System.out.println(cat4.getName());
+
+        Cat cat = new Cat();
+        cat.meow();
 
 
-        //    public static void main(String[] args) {
-//        Cat cat = new Cat();
-//        cat.meow();
-//    }
-//    static class Cat {
-//        String name;
-//        void meow() {
-//            System.out.println(name + ": meow...");
-//        }
-//    }
-//}
+
+        Cat2 cat_2 = new Cat2();
+        cat_2.name = "Rose";
+        cat_2.meow();
 
 
-//    public static void main(String[] args) {
-//        Cat cat = new Cat();
-//        cat.name = "Rose";
-//        cat.meow();
-//    }
-//    static class Cat {
-//        String name;
-//        void meow() {
-//            System.out.println(name + ": meow...");
-//        }
-//    }
-//}
 
+        Cat3 cat_3 = new Cat3();
+        cat_3.meow();
+    }
 
-//    public static void main(String[] args) {
-//        Cat cat = new Cat();
-//        cat.meow();
-//    }
-//    static class Cat {
-//        String name = "Rose";
-//        void meow() {
-//            System.out.println(name + ": meow...");
-//        }
-//    }
-//}
+    static class Cat2 {
+        String name;
+        void meow() {
+            System.out.println(name + ": meow...2");
+        }
+    }
+
+    static class Cat3 {
+        String name = "Rose";
+        void meow() {
+            System.out.println(name + ": meow...3");
+        }
     }
 }
+
