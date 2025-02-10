@@ -4,12 +4,12 @@ public class TheBasics {
 
     public static void printfunction() {
         // Print in same line
-        System.out.print("Hello world!");
-        System.out.print("Welcome to Bhaggie's world of Java Programming !!");
+        System.out.print("Hello world!  ... ");
+        System.out.println("Welcome to Bhaggie's world of Java Programming !!");
 
         // Print in different lines
         System.out.println("Start Learning");
-        System.out.println("and Let's Rock !!");
+        System.out.print("and Let's Rock !!");
     }
 
     public static void learnComments() {
