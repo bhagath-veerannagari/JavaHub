@@ -13,7 +13,7 @@ public class ArrayOperations {
         return sumOfElementsInAnArray(inputArray)/inputArray.length;
     }
 
-    public static int[] returnIndicesOftwoNumbersAddingUpToTarget (int[] inputArray, int target) {
+    public static int[] returnIndicesOfTwoNumbersAddingUpToTarget(int[] inputArray, int target) {
         int[] resultantArray = new int[0];
         for (int i = 0; i<inputArray.length; i++) {
             for (int j=i+1; j<inputArray.length; j++) {
@@ -23,6 +23,4 @@ public class ArrayOperations {
             }
         } return resultantArray;
     }
-
-
 }
