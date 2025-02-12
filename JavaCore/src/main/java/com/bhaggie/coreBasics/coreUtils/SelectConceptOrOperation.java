@@ -153,7 +153,7 @@ public class SelectConceptOrOperation {
                         int[] inputArray = CoreUtilsFactory.inputElementsIntoArray();
                         System.out.println("Enter the target value: ");
                         int target = sc.nextInt();
-                        System.out.println(Arrays.toString(ArrayOperations.returnIndicesOftwoNumbersAddingUpToTarget(inputArray, target)));
+                        System.out.println(Arrays.toString(ArrayOperations.returnIndicesOfTwoNumbersAddingUpToTarget(inputArray, target)));
                 }
         }
     }
