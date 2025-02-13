@@ -12,15 +12,4 @@ public class ArrayOperations {
     public static double avgOfElementsInAnArray (int inputArray[]) {
         return sumOfElementsInAnArray(inputArray)/inputArray.length;
     }
-
-    public static int[] returnIndicesOfTwoNumbersAddingUpToTarget(int[] inputArray, int target) {
-        int[] resultantArray = new int[0];
-        for (int i = 0; i<inputArray.length; i++) {
-            for (int j=i+1; j<inputArray.length; j++) {
-                if (inputArray[i] + inputArray[j] == target) {
-                    resultantArray = new int[]{i, j};
-                }
-            }
-        } return resultantArray;
-    }
 }
