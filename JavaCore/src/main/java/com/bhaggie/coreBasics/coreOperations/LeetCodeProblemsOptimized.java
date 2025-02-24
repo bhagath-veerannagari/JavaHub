@@ -60,4 +60,17 @@ public class LeetCodeProblemsOptimized {
         }
         return maxCount;
     }
+
+
+    // {"abc","car","ada","racecar","cool"}
+    public String firstPalindrome(String[] words) {
+        for (String s : words) {
+            String reversed = new StringBuilder(s).reverse().toString();
+
+            if (s.equals(reversed)) {
+                return s;
+            }
+        }
+        return "";
+    }
 }

@@ -4,17 +4,19 @@ import java.util.HashSet;
 
 public class TestMain {
     public static void main(String[] args) {
-        System.out.println(countDigits(121));
+        System.out.println(firstPalindrome(new String[]{"abc","car","ada","racecar","cool"}));
     }
-    public static int countDigits(int num) {
-        int count = 0;
-        int numDivCheck = num;
-        while(numDivCheck > 0) {
-            int r = numDivCheck % 10;
-            if(num % r == 0) {
-                count++;
+    public static  String firstPalindrome(String[] words) {
+        String resultantString = "";
+        for (String word : words) {
+            String rev = "";
+            for (int i = word.length()-1; i>=0; i--) {
+                rev = rev + word.charAt(i);
             }
-            numDivCheck = numDivCheck/10;
-        } return count;
+            if(rev.equals(word)) {
+                resultantString = word;
+                break;
+            }
+        } return resultantString;
     }
 }
