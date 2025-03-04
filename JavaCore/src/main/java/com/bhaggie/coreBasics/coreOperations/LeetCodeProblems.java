@@ -3,6 +3,8 @@ package main.java.com.bhaggie.coreBasics.coreOperations;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Stack;
+
 
 public class LeetCodeProblems {
     public static int[] returnIndicesOfTwoNumbersAddingUpToTarget(int[] inputArray, int target) {
@@ -206,15 +208,83 @@ public class LeetCodeProblems {
     }
 
 
-    public int arraySign(int[] nums) {
+    public static int arraySign(int[] nums) {
         int product = 1;
-        for (int i = 0; i <= nums.length; i++) {
-            product = product * nums[i];
-        }
-        if (product == 0) return 0;
-        else if (product > 0) return 1;
-        return -1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) return 0;
+            else if (nums[i] < 0) {
+                product = product * -1;
+            }
+        } return product ;
     }
 
 
+
+    public int calPoints(String[] operations) {
+        Stack<Integer> stack = new Stack();
+        int sum = 0;
+        for(String operation: operations) {
+            if(operation.equals("+")) {
+                int top = stack.pop();
+                int newTop = top + stack.peek();
+                stack.push(top);
+                stack.push(newTop);
+            } else if(operation.equals("C")) stack.pop();
+            else if(operation.equals("D")) stack.push(2*stack.peek());
+            else stack.push(Integer.valueOf(operation));
+        }
+
+        for (int score: stack) {
+            sum = sum + score;
+        } return sum;
+    }
+
+
+
+    public boolean canAliceWin(int[] nums) {
+        int singleSum = 0, doubleSum = 0;
+        for (int num:nums) {
+            if(num < 10) {
+                singleSum += num;
+            } else doubleSum += num;
+        } return singleSum != doubleSum;
+    }
+
+
+    public boolean judgeCircle(String moves) {
+        int x = 0, y = 0;
+        for (char move: moves.toCharArray()) {
+            if (move == 'U') y++;
+            else if (move == 'D') y--;
+            else if (move == 'L') x--;
+            else if (move == 'R') x++;
+        }
+        return x == 0 && y == 0;
+    }
+
+
+    public int xorOperation(int n, int start) {
+        int xor = 0;
+        for (int i = 0; i < n; i++) {
+            int num = start + 2 * i;
+            xor ^= num;
+        }
+        return xor;
+    }
+
+
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<Character>();
+        for (char c : s.toCharArray()) {
+            if (c == '(')
+                stack.push(')');
+            else if (c == '{')
+                stack.push('}');
+            else if (c == '[')
+                stack.push(']');
+            else if (stack.isEmpty() || stack.pop() != c)
+                return false;
+        }
+        return stack.isEmpty();
+    }
 }
