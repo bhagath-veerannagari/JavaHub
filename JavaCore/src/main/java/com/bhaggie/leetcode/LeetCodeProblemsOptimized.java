@@ -1,4 +1,4 @@
-package main.java.com.bhaggie.coreBasics.coreOperations;
+package main.java.com.bhaggie.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
