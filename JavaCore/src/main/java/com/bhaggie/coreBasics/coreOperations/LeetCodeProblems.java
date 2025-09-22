@@ -1,5 +1,7 @@
 package main.java.com.bhaggie.coreBasics.coreOperations;
 
+import main.java.com.bhaggie.coreBasics.coreConcepts.TheLinkedList;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -286,5 +288,25 @@ public class LeetCodeProblems {
                 return false;
         }
         return stack.isEmpty();
+    }
+
+
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int resultantArrayLength = nums1.length + nums2.length;
+        int[] resultantArray = new int[resultantArrayLength];
+
+        for (int i = 0; i<nums1.length; i++) {
+            resultantArray[i] = nums1[i];
+        }
+
+        for (int i=nums1.length; i<nums1.length+nums2.length; i++) {
+            resultantArray[i] = nums2[i-nums1.length];
+        }
+
+        Arrays.sort(resultantArray);
+
+        if (resultantArrayLength % 2 == 0) {
+            return (double) (resultantArray[resultantArrayLength/2 - 1] + resultantArray[resultantArrayLength/2])/2;
+        } else return resultantArray[(resultantArrayLength+1)/2 - 1];
     }
 }
